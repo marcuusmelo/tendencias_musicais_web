@@ -1,0 +1,4 @@
+venv_webapp
+db.sqlite3
+settings_local.py
+*__pycache__*
