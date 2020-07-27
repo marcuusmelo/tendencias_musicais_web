@@ -25,4 +25,5 @@ class SpotifyData(models.Model):
     duration = models.IntegerField()
     song_name = models.CharField(max_length=126)
     popularity = models.IntegerField()
+    position = models.IntegerField()
     source_date = models.DateTimeField()
