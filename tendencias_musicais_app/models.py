@@ -11,9 +11,9 @@ class Playlists(models.Model):
 class Artists(models.Model):
     artist_id = models.CharField(max_length=126, primary_key=True)
     name = models.CharField(max_length=126)
-    music_genre_1 = models.CharField(max_length=126)
-    music_genre_2 = models.CharField(max_length=126)
-    music_genre_3 = models.CharField(max_length=126)
+    music_genre_1 = models.CharField(max_length=126, null=True, blank=True)
+    music_genre_2 = models.CharField(max_length=126, null=True, blank=True)
+    music_genre_3 = models.CharField(max_length=126, null=True, blank=True)
 
 
 class SpotifyData(models.Model):
