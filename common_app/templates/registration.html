@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>registration</title>
+    </head>
+    <body>
+        <h1>Bem-vindo, faça sua conta</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" name="button">Enviar</button>
+        </form>
+
+    </body>
+</html>
